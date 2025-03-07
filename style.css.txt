@@ -1,0 +1,66 @@
+/* style.css */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, footer {
+  padding: 1em;
+}
+
+header {
+  background: #1f1f1f;
+  text-align: center;
+}
+
+nav {
+  background: #1a1a1a;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+section {
+  margin: 2em 0;
+  padding: 1em;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+input, select, button {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 3px;
+  border: none;
+}
+
+button {
+  background: #ff8c00;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e07b00;
+}
+
+footer {
+  text-align: center;
+  background: #1f1f1f;
+}
