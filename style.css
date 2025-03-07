@@ -1,66 +1,127 @@
-/* style.css */
-body {
-  background-color: #121212;
-  color: #ffffff;
-  font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header, nav, main, footer {
-  padding: 1em;
+body {
+  background: #0a0a0a;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
 }
 
-header {
-  background: #1f1f1f;
-  text-align: center;
-}
-
-nav {
-  background: #1a1a1a;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
+/* Header */
+.site-header {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background: #1f1f1f;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-nav li {
-  margin: 0 1em;
-}
-
-nav a {
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #ff8c00;
+}
+
+.site-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.site-header li {
+  margin-left: 1rem;
+}
+
+.site-header a {
+  color: #ffffff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-section {
-  margin: 2em 0;
-  padding: 1em;
-  border: 1px solid #333;
-  border-radius: 5px;
+.site-header a:hover {
+  color: #ff8c00;
 }
 
-input, select, button {
-  padding: 0.5em;
-  margin: 0.5em 0;
-  border-radius: 3px;
-  border: none;
+/* Sections */
+.section {
+  padding: 2rem;
+  margin: 1rem 0;
+  background: #141414;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-button {
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.profile-info h2 {
+  color: #ff8c00;
+  margin-bottom: 0.5rem;
+}
+
+/* Tasks */
+.tasks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.task-card {
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #2c2c2c;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-card h2 {
+  color: #ff8c00;
+  margin-bottom: 0.5rem;
+}
+
+.complete-btn {
   background: #ff8c00;
-  color: #fff;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
-button:hover {
+.complete-btn:hover {
   background: #e07b00;
 }
 
-footer {
+/* Footer */
+.site-footer {
   text-align: center;
+  padding: 1rem;
   background: #1f1f1f;
+  color: #888888;
 }
